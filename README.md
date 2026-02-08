@@ -363,17 +363,6 @@ See `requirements.txt` for exact versions.
 
 ---
 
-## 🔮 Future Enhancements
-
-**Planned features:**
-- [ ] Black-Litterman model implementation
-- [ ] Transaction costs & rebalancing
-- [ ] Backtesting framework
-- [ ] Real-time portfolio monitoring
-- [ ] Machine learning return predictions
-- [ ] Multi-period optimization
-- [ ] Risk parity strategies
-- [ ] Factor models (Fama-French)
 
 **Contributions welcome!**
 
@@ -388,9 +377,8 @@ MIT License - feel free to use for learning, research, or commercial projects.
 ## 👤 Author
 
 **Thanos Paidoulias**
-- Portfolio: [GitHub Profile](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+- Portfolio: [GitHub Profile](https://github.com/ThanosPaidoulias)
+- LinkedIn: [Your Profile](https://www.linkedin.com/in/thanos-paidoulias/)
 
 ---
 
@@ -412,7 +400,7 @@ If you use this code in your research or projects, please cite:
   author = {Paidoulias, Thanos},
   title = {Modern Portfolio Theory: Python Implementation},
   year = {2021},
-  url = {https://github.com/YOUR_USERNAME/modern-portfolio-theory}
+  url = {https://github.com/ThanosPaidoulias/modern-portfolio-theory}
 }
 ```
 

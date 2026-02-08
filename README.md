@@ -20,7 +20,6 @@ This project implements **Modern Portfolio Theory (MPT)** using Python, demonstr
 ---
 
 ## 📊 Quick Example
-
 ```python
 from src.data_loader import download_stock_data, calculate_returns, annualize_statistics
 from src.optimization.scipy_optimizer import maximize_sharpe_ratio
@@ -41,10 +40,9 @@ print(f"Weights: {optimal['weights']}")
 ## 🚀 Quick Start
 
 ### Installation
-
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/modern-portfolio-theory.git
+git clone https://github.com/ThanosPaidoulias/modern-portfolio-theory.git
 cd modern-portfolio-theory
 
 # Create virtual environment (recommended)
@@ -56,7 +54,6 @@ pip install -r requirements.txt
 ```
 
 ### Run Complete Analysis
-
 ```bash
 python main.py
 ```
@@ -74,7 +71,6 @@ python main.py
 ---
 
 ## 📂 Project Structure
-
 ```
 portfolio-optimization/
 │
@@ -91,12 +87,64 @@ portfolio-optimization/
 │       ├── scipy_optimizer.py      # SciPy SLSQP optimization
 │       └── cvxpy_optimizer.py      # Convex optimization
 │
+├── One_script_version/             # Original monolithic implementation
+│   └── A_paidoulias_portfolio_optim.py
+│
 ├── notebooks/                      # Jupyter notebooks (optional)
 ├── results/                        # Output plots & tables
 └── data/                           # Downloaded data cache
 ```
 
 **Total:** 1,558 lines of modular, documented code
+
+---
+
+## 📜 Code Versions: Modular vs Original
+
+This project demonstrates the evolution from a research script to production-quality code.
+
+### **Modular Version (Recommended)** ✅
+- **Location:** `main.py` + `src/` modules
+- **Structure:** 1,558 lines across 8 organized files
+- **Best for:** 
+  - Production use
+  - Code reuse
+  - Testing and extension
+  - Collaborative development
+- **Run:** `python main.py`
+
+**Advantages:**
+- ✅ Reusable components
+- ✅ Easy to test individual functions
+- ✅ Professional architecture
+- ✅ Separation of concerns
+- ✅ Better for portfolios/interviews
+
+### **Original Script (Reference)** 📄
+- **Location:** `One_script_version/A_paidoulias_portfolio_optim.py`
+- **Structure:** 491 lines in single file
+- **Best for:**
+  - Quick exploration
+  - Linear understanding of workflow
+  - Academic reference
+  - Comparison with modular approach
+- **Run:** `python One_script_version/A_paidoulias_portfolio_optim.py`
+
+**Note:** Both versions implement the same algorithms and produce equivalent results. The modular version demonstrates software engineering best practices applied to quantitative finance.
+
+### **Comparison**
+
+| Aspect | Original Script | Modular Version |
+|--------|----------------|-----------------|
+| **Lines of Code** | 491 | 1,558 |
+| **Files** | 1 | 8 |
+| **Reusability** | Low | High |
+| **Testability** | Difficult | Easy |
+| **Maintainability** | Medium | High |
+| **Documentation** | Inline comments | Docstrings + README |
+| **Use Case** | Academic/Research | Production/Portfolio |
+
+**For new users:** Start with the modular version to see professional Python architecture. Refer to the original script to understand the linear workflow and compare implementation approaches.
 
 ---
 
@@ -184,9 +232,9 @@ subject to:
 
 **Approach:** Convex optimization framework
 - **Objective:** Maximize risk-adjusted return
-  ```
+```
   max: w^T*μ - γ*w^T*Σ*w
-  ```
+```
 - **Parameter γ (gamma):** Risk aversion level
   - Low γ: Aggressive (higher returns, higher risk)
   - High γ: Conservative (lower risk, lower returns)
@@ -239,7 +287,6 @@ All saved to `results/` directory in high resolution (300 DPI)
 ## 💻 Usage Examples
 
 ### Custom Stock Selection
-
 ```python
 from src.data_loader import download_stock_data, calculate_returns, annualize_statistics
 from src.optimization.monte_carlo import monte_carlo_simulation
@@ -260,7 +307,6 @@ print(f"Max Sharpe Ratio: {results['sharpe_ratio'].max():.2f}")
 ```
 
 ### Find Efficient Frontier
-
 ```python
 from src.optimization.scipy_optimizer import get_efficient_frontier_scipy
 import numpy as np
@@ -280,7 +326,6 @@ volatilities = [p['fun'] for p in efficient_portfolios]
 ```
 
 ### Optimize with Risk Aversion
-
 ```python
 from src.optimization.cvxpy_optimizer import optimize_risk_adjusted_return
 
@@ -307,6 +352,10 @@ print(f"Aggressive Sharpe: {aggressive['sharpe_ratio']:.2f}")
 3. Study `src/portfolio_metrics.py` - Core calculations
 4. Try `src/optimization/monte_carlo.py` - Most intuitive method
 5. Advanced: `src/optimization/cvxpy_optimizer.py` - Mathematical optimization
+
+**Alternative path (linear learning):**
+- Start with `original_script/One_script_version.py` for a linear, easy-to-follow implementation
+- Then explore the modular version to see professional organization
 
 ### Recommended Reading
 
@@ -363,7 +412,6 @@ See `requirements.txt` for exact versions.
 
 ---
 
-
 **Contributions welcome!**
 
 ---
@@ -394,7 +442,6 @@ MIT License - feel free to use for learning, research, or commercial projects.
 ## 📚 Citation
 
 If you use this code in your research or projects, please cite:
-
 ```bibtex
 @software{paidoulias2021portfolio,
   author = {Paidoulias, Thanos},
@@ -407,5 +454,3 @@ If you use this code in your research or projects, please cite:
 ---
 
 ⭐ **Star this repository if you found it useful!**
-
-📧 Questions? Open an issue or reach out!

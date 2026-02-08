@@ -377,8 +377,8 @@ MIT License - feel free to use for learning, research, or commercial projects.
 ## 👤 Author
 
 **Thanos Paidoulias**
-- Portfolio: [GitHub Profile](https://github.com/ThanosPaidoulias)
-- LinkedIn: [Your Profile](https://www.linkedin.com/in/thanos-paidoulias/)
+- Portfolio: [https://github.com/ThanosPaidoulias]
+- LinkedIn: [https://www.linkedin.com/in/thanos-paidoulias/]
 
 ---
 

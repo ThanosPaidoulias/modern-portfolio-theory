@@ -87,8 +87,8 @@ portfolio-optimization/
 │       ├── scipy_optimizer.py      # SciPy SLSQP optimization
 │       └── cvxpy_optimizer.py      # Convex optimization
 │
-├── One_script_version/             # Original monolithic implementation
-│   └── A_paidoulias_portfolio_optim.py
+├── original_script                 # Original monolithic implementation
+│   └── One_script_version.py
 │
 ├── notebooks/                      # Jupyter notebooks (optional)
 ├── results/                        # Output plots & tables
@@ -121,30 +121,16 @@ This project demonstrates the evolution from a research script to production-qua
 - ✅ Better for portfolios/interviews
 
 ### **Original Script (Reference)** 📄
-- **Location:** `One_script_version/A_paidoulias_portfolio_optim.py`
+- **Location:** `original_script/One_script_version.py`
 - **Structure:** 491 lines in single file
 - **Best for:**
   - Quick exploration
   - Linear understanding of workflow
   - Academic reference
   - Comparison with modular approach
-- **Run:** `python One_script_version/A_paidoulias_portfolio_optim.py`
+- **Run:** `python original_script/One_script_version.py`
 
 **Note:** Both versions implement the same algorithms and produce equivalent results. The modular version demonstrates software engineering best practices applied to quantitative finance.
-
-### **Comparison**
-
-| Aspect | Original Script | Modular Version |
-|--------|----------------|-----------------|
-| **Lines of Code** | 491 | 1,558 |
-| **Files** | 1 | 8 |
-| **Reusability** | Low | High |
-| **Testability** | Difficult | Easy |
-| **Maintainability** | Medium | High |
-| **Documentation** | Inline comments | Docstrings + README |
-| **Use Case** | Academic/Research | Production/Portfolio |
-
-**For new users:** Start with the modular version to see professional Python architecture. Refer to the original script to understand the linear workflow and compare implementation approaches.
 
 ---
 
